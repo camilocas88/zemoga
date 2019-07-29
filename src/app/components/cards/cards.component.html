@@ -1,0 +1,37 @@
+<h2 style="margin: 2rem 0;">{{titulo}} </h2>
+
+
+<div *ngIf="!cards">
+    Cargando....
+</div>
+
+<!-- <div>
+    <div class="container d-flex" *ngIf="cards">
+        <div class="card" style="width: 50rem;" *ngFor="let card of cards">
+            <img src="{{card.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="container" *ngIf="cards">
+    <div class="d-flex flex-wrap justify-content-between ">
+        <div class="cards mb-4  col-md-6 col-sm-12" *ngFor="let card of cards">
+            <div class="cards__contain "  >
+                <img src="{{card.url}}" alt="{{card.img}}">
+                <div class="cards__overlay">
+                    <h1 class="cardName">{{card.name}}</h1>
+                    <p class="cardDescription">{{card.description}}</p>
+                    <div class="cardBottom d-flex justify-content-between">
+                        <button class="btn btn-primary-outline">View Full Report</button>
+                        <p class="cardOcupation">{{card.ocupation}} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

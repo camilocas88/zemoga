@@ -1,0 +1,39 @@
+.cardAlert{
+    display: flex;
+    background-color: #ebebeb;
+    padding: 20px;
+    margin-top: 2rem;
+
+    &__left{
+        width: 30%;
+        p{
+            font-size: 1.6rem;
+            font-weight: lighter;
+            span{
+                font-size: 2.7rem;
+                line-height: 0;
+                font-weight: bold;
+            }
+        }
+    }
+    &__right{
+        width: 70%;
+    }
+}
+button{outline: none}
+
+
+@media (max-width: 900px){
+    
+    .cardAlert{
+        flex-wrap: wrap;
+        text-align: center;
+
+        &__left, &__right{
+            width: 100%;
+        }
+    }
+
+    
+
+}
