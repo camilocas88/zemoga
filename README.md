@@ -5,6 +5,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Deploy 
 run `npm i`
 
+## Api Download
+download this api for whit json in this link https://github.com/camilocas88/json-Zemoga
 
 ## Development server
 
